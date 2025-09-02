@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EnForce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans">
+  
+  <!-- Ana Başlık -->
+  <section class="flex flex-col items-center justify-center text-center min-h-screen px-6">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo" class="w-20 mb-6" data-aos="fade-down">
+    <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">EnForce</h1>
+    <p class="text-gray-400 mb-12 text-lg" data-aos="fade-up">Sunucunuzu yönetmek hiç bu kadar kolay olmamıştı.</p>
+
+    <!-- Kartlar -->
+    <div class="grid gap-6 md:grid-cols-3 mb-12 w-full max-w-4xl">
+      <!-- Moderasyon -->
+      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/1042/1042339.png" class="w-12 mb-4 mx-auto" alt="Moderasyon">
+        <h2 class="text-xl font-semibold mb-2">Moderasyon</h2>
+        <p class="text-gray-400">Küfür, spam engelleme</p>
+      </div>
+      <!-- Eğlence -->
+      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="150">
+        <img src="https://cdn-icons-png.flaticon.com/512/633/633822.png" class="w-12 mb-4 mx-auto" alt="Eğlence">
+        <h2 class="text-xl font-semibold mb-2">Eğlence</h2>
+        <p class="text-gray-400">Oyunlar, müzik</p>
+      </div>
+      <!-- Gelişmiş -->
+      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" class="w-12 mb-4 mx-auto" alt="Gelişmiş">
+        <h2 class="text-xl font-semibold mb-2">Gelişmiş</h2>
+        <p class="text-gray-400">Custom API bağlantıları, veri çekme</p>
+      </div>
+    </div>
+
+    <!-- Butonlar -->
+    <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
+      <a href="#" class="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">🚀 Botu Davet Et</a>
+      <a href="#" class="px-6 py-3 bg-neutral-800 rounded-xl font-semibold hover:bg-neutral-700 transition">💬 Destek Sunucusu</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-neutral-800 text-gray-500">
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" class="w-5" alt="Discord"> 
+      <span>Discord | EnForce</span>
+    </div>
+    <p>© 2024 EnForce. Tüm Hakları Saklıdır.</p>
+  </footer>
+
+  <!-- AOS animasyon -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+        </html>
