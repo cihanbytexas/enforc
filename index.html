@@ -1,65 +1,82 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EnForce</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-black text-white font-sans">
-  
-  <!-- Ana Başlık -->
-  <section class="flex flex-col items-center justify-center text-center min-h-screen px-6">
-    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo" class="w-20 mb-6" data-aos="fade-down">
-    <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">EnForce</h1>
-    <p class="text-gray-400 mb-12 text-lg" data-aos="fade-up">Sunucunuzu yönetmek hiç bu kadar kolay olmamıştı.</p>
+<body class="bg-black text-white font-sans flex flex-col min-h-screen">
+
+  <!-- Orta Alan -->
+  <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+    <!-- Başlık -->
+    <h1 class="text-[42px] md:text-[56px] font-bold mb-3">EnForce</h1>
+    <p class="text-gray-400 text-[18px] mb-12">Sunucunuzu yönetmek hiç bu kadar kolay olmamıştı.</p>
 
     <!-- Kartlar -->
-    <div class="grid gap-6 md:grid-cols-3 mb-12 w-full max-w-4xl">
+    <div class="grid gap-6 md:grid-cols-3 max-w-5xl w-full mb-14">
+      
       <!-- Moderasyon -->
-      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in">
-        <img src="https://cdn-icons-png.flaticon.com/512/1042/1042339.png" class="w-12 mb-4 mx-auto" alt="Moderasyon">
-        <h2 class="text-xl font-semibold mb-2">Moderasyon</h2>
-        <p class="text-gray-400">Küfür, spam engelleme</p>
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+        <div class="mb-5 text-white">
+          <!-- Shield Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22c-4.8-2.4-8-7.2-8-12V4l12-4 12 4v6c0 4.8-3.2 9.6-8 12l-4 2-4-2Z"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Moderasyon</h2>
+        <p class="text-gray-400 text-[15px]">Küfür, spam engelleme</p>
       </div>
+
       <!-- Eğlence -->
-      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="150">
-        <img src="https://cdn-icons-png.flaticon.com/512/633/633822.png" class="w-12 mb-4 mx-auto" alt="Eğlence">
-        <h2 class="text-xl font-semibold mb-2">Eğlence</h2>
-        <p class="text-gray-400">Oyunlar, müzik</p>
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+        <div class="mb-5 text-white">
+          <!-- Gamepad Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="6" x2="10" y1="11" y2="11"/>
+            <line x1="8" x2="8" y1="9" y2="13"/>
+            <line x1="15" x2="15.01" y1="12" y2="12"/>
+            <line x1="18" x2="18.01" y1="10" y2="10"/>
+            <rect width="20" height="12" x="2" y="6" rx="2"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Eğlence</h2>
+        <p class="text-gray-400 text-[15px]">Oyunlar, müzik</p>
       </div>
+
       <!-- Gelişmiş -->
-      <div class="bg-neutral-900 rounded-2xl p-6 shadow-xl hover:scale-105 transition" data-aos="zoom-in" data-aos-delay="300">
-        <img src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png" class="w-12 mb-4 mx-auto" alt="Gelişmiş">
-        <h2 class="text-xl font-semibold mb-2">Gelişmiş</h2>
-        <p class="text-gray-400">Custom API bağlantıları, veri çekme</p>
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+        <div class="mb-5 text-white">
+          <!-- Code Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 16 4-4-4-4"/>
+            <path d="m6 8-4 4 4 4"/>
+            <path d="M14.5 4 9.5 20"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Gelişmiş</h2>
+        <p class="text-gray-400 text-[15px]">Custom API bağlantıları, veri çekme</p>
       </div>
     </div>
 
     <!-- Butonlar -->
-    <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
-      <a href="#" class="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">🚀 Botu Davet Et</a>
-      <a href="#" class="px-6 py-3 bg-neutral-800 rounded-xl font-semibold hover:bg-neutral-700 transition">💬 Destek Sunucusu</a>
+    <div class="flex flex-col sm:flex-row gap-5">
+      <a href="#" class="px-8 py-3.5 bg-white text-black rounded-xl font-semibold text-[16px] hover:bg-gray-200 transition">Botu Davet Et</a>
+      <a href="#" class="px-8 py-3.5 bg-neutral-800 rounded-xl font-semibold text-[16px] hover:bg-neutral-700 transition">Destek Sunucusu</a>
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="text-center py-6 border-t border-neutral-800 text-gray-500">
-    <div class="flex items-center justify-center gap-2 mb-2">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" class="w-5" alt="Discord"> 
-      <span>Discord | EnForce</span>
+  <footer class="text-center py-8 text-gray-400 text-[14px] border-t border-neutral-800">
+    <div class="flex items-center justify-center gap-2 mb-3">
+      <span class="text-lg">🎧</span>
+      <span>Discord</span>
+      <span>|</span>
+      <span>EnForce</span>
     </div>
     <p>© 2024 EnForce. Tüm Hakları Saklıdır.</p>
   </footer>
 
-  <!-- AOS animasyon -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  </script>
 </body>
-        </html>
+</html>
