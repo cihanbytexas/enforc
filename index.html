@@ -4,67 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EnForce</title>
+  <meta name="description" content="EnForce Discord botu ile sunucunuzu kolayca yönetin. Capslock uyarı, küfür filtreleme, link engel, kick/ban, avatar, welcome card, AI gender register özellikleri.">
+  <meta name="keywords" content="EnForce, Discord Bot, Moderasyon, Capslock, Küfür, Link Engel, Kick, Ban, Avatar, Welcome Card, AI Gender Register">
+  <meta name="author" content="EnForce">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Fade-in animasyon
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, i) => {
+        setTimeout(() => {
+          el.classList.add("opacity-100", "translate-y-0");
+        }, i * 150);
+      });
+    });
+  </script>
 </head>
 <body class="bg-black text-white font-sans flex flex-col min-h-screen">
 
+  <!-- Header / Bot Görseli -->
+  <header class="flex items-center justify-start p-6 relative">
+    <!-- BOT GÖRSELİ ALANI (gif, png, jpg farketmez) -->
+    <div class="w-20 h-20 bg-neutral-800 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+      <span class="text-gray-400 text-xs">Bot Görseli</span>
+      <!-- Örnek: <img src="bot.gif" alt="Bot" class="w-full h-full object-cover"> -->
+    </div>
+    <h1 class="text-3xl font-bold">EnForce</h1>
+  </header>
+
   <!-- Orta Alan -->
   <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
-    <!-- Başlık -->
-    <h1 class="text-[42px] md:text-[56px] font-bold mb-3">EnForce</h1>
-    <p class="text-gray-400 text-[18px] mb-12">Sunucunuzu yönetmek hiç bu kadar kolay olmamıştı.</p>
+    <h2 class="text-[42px] md:text-[56px] font-bold mb-3 fade-in opacity-0 translate-y-6 transition-all duration-700">Sunucunuzu yönetmek hiç bu kadar kolay olmamıştı</h2>
+    <p class="text-gray-400 text-[18px] mb-12 fade-in opacity-0 translate-y-6 transition-all duration-700">Capslock uyarı, küfür filtreleme, link engel, kick/ban, avatar, welcome card ve AI gender register özellikleriyle tam kontrol sizde!</p>
 
-    <!-- Kartlar -->
+    <!-- Özellikler Kartları -->
     <div class="grid gap-6 md:grid-cols-3 max-w-5xl w-full mb-14">
-      
-      <!-- Moderasyon -->
-      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+
+      <!-- Capslock Uyarı -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
         <div class="mb-5 text-white">
-          <!-- Shield Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22c-4.8-2.4-8-7.2-8-12V4l12-4 12 4v6c0 4.8-3.2 9.6-8 12l-4 2-4-2Z"/>
+            <path d="M12 4h0v16h0M6 12h12"/>
           </svg>
         </div>
-        <h2 class="text-[20px] font-semibold mb-2">Moderasyon</h2>
-        <p class="text-gray-400 text-[15px]">Küfür, spam engelleme</p>
+        <h2 class="text-[20px] font-semibold mb-2">Capslock Uyarı</h2>
+        <p class="text-gray-400 text-[15px]">Büyük harf kullanımında uyarı</p>
       </div>
 
-      <!-- Eğlence -->
-      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+      <!-- Küfür Filtreleme -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
         <div class="mb-5 text-white">
-          <!-- Gamepad Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="6" x2="10" y1="11" y2="11"/>
-            <line x1="8" x2="8" y1="9" y2="13"/>
-            <line x1="15" x2="15.01" y1="12" y2="12"/>
-            <line x1="18" x2="18.01" y1="10" y2="10"/>
-            <rect width="20" height="12" x="2" y="6" rx="2"/>
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="4" y1="4" x2="20" y2="20"/>
           </svg>
         </div>
-        <h2 class="text-[20px] font-semibold mb-2">Eğlence</h2>
-        <p class="text-gray-400 text-[15px]">Oyunlar, müzik</p>
+        <h2 class="text-[20px] font-semibold mb-2">Küfür Filtreleme</h2>
+        <p class="text-gray-400 text-[15px]">Belirlenen kelimeleri engelle</p>
       </div>
 
-      <!-- Gelişmiş -->
-      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg">
+      <!-- Link Engel -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
         <div class="mb-5 text-white">
-          <!-- Code Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m18 16 4-4-4-4"/>
-            <path d="m6 8-4 4 4 4"/>
-            <path d="M14.5 4 9.5 20"/>
+            <path d="M10 14a4 4 0 1 1 0-8h4a4 4 0 1 1 0 8h-4z"/>
           </svg>
         </div>
-        <h2 class="text-[20px] font-semibold mb-2">Gelişmiş</h2>
-        <p class="text-gray-400 text-[15px]">Custom API bağlantıları, veri çekme</p>
+        <h2 class="text-[20px] font-semibold mb-2">Link Engel</h2>
+        <p class="text-gray-400 text-[15px]">İstenmeyen linkleri otomatik engelle</p>
       </div>
+
+      <!-- Kick -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
+        <div class="mb-5 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12h16M12 4l8 8-8 8"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Kick</h2>
+        <p class="text-gray-400 text-[15px]">Kuralları ihlal edenleri sunucudan at</p>
+      </div>
+
+      <!-- Ban -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
+        <div class="mb-5 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Ban</h2>
+        <p class="text-gray-400 text-[15px]">Kalıcı olarak sunucudan uzaklaştır</p>
+      </div>
+
+      <!-- Avatar -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
+        <div class="mb-5 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 8-4 8-4s8 0 8 4"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Avatar</h2>
+        <p class="text-gray-400 text-[15px]">Kullanıcı avatarlarını görüntüle</p>
+      </div>
+
+      <!-- Welcome Card -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
+        <div class="mb-5 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M8 8h8v8H8z"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">Welcome Card</h2>
+        <p class="text-gray-400 text-[15px]">Sunucuya katılanlara özel hoşgeldin kartı</p>
+      </div>
+
+      <!-- AI Gender Register -->
+      <div class="bg-neutral-900 rounded-2xl p-8 flex flex-col items-center shadow-lg hover:scale-105 transition-transform fade-in opacity-0 translate-y-6 duration-700">
+        <div class="mb-5 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 12h8M12 8v8"/>
+          </svg>
+        </div>
+        <h2 class="text-[20px] font-semibold mb-2">AI Gender Register</h2>
+        <p class="text-gray-400 text-[15px]">Kullanıcı cinsiyetini AI ile otomatik kaydet</p>
+      </div>
+
     </div>
 
     <!-- Butonlar -->
-    <div class="flex flex-col sm:flex-row gap-5">
-      <a href="#" class="px-8 py-3.5 bg-white text-black rounded-xl font-semibold text-[16px] hover:bg-gray-200 transition">Botu Davet Et</https://discord.com/oauth2/authorize?client_id=1248510896331030569&scope=bot%20applications.commands&permissions=8>
-      <a href="#" class="px-8 py-3.5 bg-neutral-800 rounded-xl font-semibold text-[16px] hover:bg-neutral-700 transition">Destek Sunucusu</a>
+    <div class="flex flex-col sm:flex-row gap-5 fade-in opacity-0 translate-y-6 transition-all duration-700">
+      <a href="https://discord.com/oauth2/authorize?client_id=1248510896331030569&scope=bot%20applications.commands&permissions=8" class="px-8 py-3.5 bg-white text-black rounded-xl font-semibold text-[16px] hover:bg-gray-200 transition">Botu Davet Et</a>
+      <a href="https://discord.gg/AW2Ctq3rDb" class="px-8 py-3.5 bg-neutral-800 rounded-xl font-semibold text-[16px] hover:bg-neutral-700 transition">Destek Sunucusu</a>
     </div>
+
   </main>
 
   <!-- Footer -->
